@@ -270,7 +270,7 @@ if readFile and writeFile then
                 else
                     content = result
                 end
-
+                print(content,asset)
                 assets = { loadstring(content, asset .. '.lua')() }
             else
                 assets = { loadstring(readFile("hydroxide/" .. asset .. ".lua"), asset .. '.lua')() }

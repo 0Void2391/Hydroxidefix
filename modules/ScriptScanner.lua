@@ -17,12 +17,13 @@ local function scan(query)
     for _i, v in pairs(getGc()) do
         if type(v) == "function" and not isXClosure(v) then
             local script = rawget(getfenv(v), "script")
-
+            local succ, result = pcall(getScriptClosure, script)
+            print(succ)
             if typeof(script) == "Instance" and 
                 not scripts[script] and 
                 script:IsA("LocalScript") and 
                 script.Name:lower():find(query) and
-                pcall(getScriptClosure(script)) and
+                succ and
                 pcall(function() getsenv(script) end)
             then
                 scripts[script] = LocalScript.new(script)

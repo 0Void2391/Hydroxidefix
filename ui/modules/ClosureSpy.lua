@@ -258,6 +258,7 @@ local Log = {}
 local ArgsLog = {}
 
 function Log.new(hook)
+    set_thread_identity(3)
     local log = {}
     local button = Assets.ClosureLog:Clone()
     local buttonName = button:FindFirstChild("Name")
@@ -359,7 +360,7 @@ function Log.new(hook)
     log.Adjust = Log.adjust
     log.IncrementCalls = Log.incrementCalls
     log.Decrementcalls = Log.decrementCalls
-
+    set_thread_identity(8)
     return log
 end
 

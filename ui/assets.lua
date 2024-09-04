@@ -1,6 +1,4 @@
-
 local G2L = {};
-
 -- Workspace.Hydroxide C Assets
 G2L["1"] = Instance.new("Folder", gethui());
 G2L["1"]["Name"] = [[Hydroxide C Assets]];

@@ -447,6 +447,7 @@ function Log.clear(log)
 end
 
 function Log.incrementCalls(log, call)
+    set_thread_identity(3)
     local logInstance = log.Button.Instance
     local hook = log.Hook
 
@@ -460,6 +461,7 @@ function Log.incrementCalls(log, call)
         ArgsLog.new(log, call)
         hookLogs:Recalculate()
     end
+    set_thread_identity(8)
 end
 
 function Log.decrementCalls(log, args)

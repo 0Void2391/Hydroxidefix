@@ -29,10 +29,9 @@ end
 
 local function searchClosure(script, name, upvalueIndex, constants)
     for _i, v in pairs(getGc()) do
-        local parentScript = rawget(getfenv(v), "script")
-
-        if type(v) == "function" and 
-            isLClosure(v) and 
+        if type(v) == "function" then 
+            local parentScript = rawget(getfenv(v), "script")
+            if isLClosure(v) and 
             not isXClosure(v) and 
             (
                 (script == nil and parentScript.Parent == nil) or script == parentScript
@@ -47,7 +46,7 @@ local function searchClosure(script, name, upvalueIndex, constants)
         end
     end
 end
-
+end
 aux.placeholderUserdataConstant = placeholderUserdataConstant
 aux.searchClosure = searchClosure
 

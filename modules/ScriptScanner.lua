@@ -18,7 +18,6 @@ local function scan(query)
         if type(v) == "function" and not isXClosure(v) then
             local script = rawget(getfenv(v), "script")
             local succ, result = pcall(getScriptClosure, script)
-            print(succ)
             if typeof(script) == "Instance" and 
                 not scripts[script] and 
                 script:IsA("LocalScript") and 

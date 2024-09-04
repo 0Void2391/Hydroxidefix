@@ -13,7 +13,6 @@ local G2L = {};
 -- Workspace.Hydroxide C Assets
 G2L["1"] = Instance.new("Folder", gethui());
 G2L["1"]["Name"] = [[Hydroxide C Assets]];
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- Workspace.Hydroxide C Assets.ConstantScanner
 G2L["2"] = Instance.new("Folder", G2L["1"]);

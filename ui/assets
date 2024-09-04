@@ -1,0 +1,2176 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 845 | Scripts: 0 | Modules: 0
+local G2L = {};
+
+-- Workspace.Hydroxide C
+G2L["1"] = Instance.new("Folder", gethui());
+G2L["1"]["Name"] = [[Hydroxide C]];
+
+-- Workspace.Hydroxide C.Base
+G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["2"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["2"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["ImageColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2"]["Image"] = [[rbxassetid://4623529748]];
+G2L["2"]["Size"] = UDim2.new(0, 675, 0, 350);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["2"]["Name"] = [[Base]];
+G2L["2"]["BackgroundTransparency"] = 1;
+G2L["2"]["Position"] = UDim2.new(0.5, -325, 0.5, -175);
+
+-- Workspace.Hydroxide C.Base.Border
+G2L["3"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["3"]["ZIndex"] = 0;
+G2L["3"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["3"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["ImageColor3"] = Color3.fromRGB(226, 0, 0);
+G2L["3"]["Image"] = [[rbxassetid://4623529748]];
+G2L["3"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["3"]["Name"] = [[Border]];
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Border.Border
+G2L["4"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["4"]["ZIndex"] = -1;
+G2L["4"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["4"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["ImageTransparency"] = 0.800000011920929;
+G2L["4"]["Image"] = [[rbxassetid://4623529748]];
+G2L["4"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["4"]["Name"] = [[Border]];
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Tabs
+G2L["5"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["5"]["ZIndex"] = 2;
+G2L["5"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["5"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["ImageColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["5"]["Image"] = [[rbxassetid://4623529748]];
+G2L["5"]["Size"] = UDim2.new(0, 32, 1, -49);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5"]["Name"] = [[Tabs]];
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Position"] = UDim2.new(0, 6, 0, 25);
+
+-- Workspace.Hydroxide C.Base.Tabs.Border
+G2L["6"] = Instance.new("ImageLabel", G2L["5"]);
+G2L["6"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["6"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["ImageTransparency"] = 0.42500001192092896;
+G2L["6"]["Image"] = [[rbxassetid://4623529748]];
+G2L["6"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6"]["Name"] = [[Border]];
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container
+G2L["7"] = Instance.new("Frame", G2L["5"]);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["7"]["ClipsDescendants"] = true;
+G2L["7"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["7"]["Name"] = [[Container]];
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.UpvalueScanner
+G2L["8"] = Instance.new("ImageButton", G2L["7"]);
+G2L["8"]["ZIndex"] = 3;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["8"]["Image"] = [[rbxassetid://4623529748]];
+G2L["8"]["Size"] = UDim2.new(0, 24, 0, 24);
+G2L["8"]["Name"] = [[UpvalueScanner]];
+G2L["8"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["8"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.UpvalueScanner.Border
+G2L["9"] = Instance.new("ImageLabel", G2L["8"]);
+G2L["9"]["ZIndex"] = 2;
+G2L["9"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["9"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["ImageTransparency"] = 0.5;
+G2L["9"]["Image"] = [[rbxassetid://4623529748]];
+G2L["9"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["9"]["Name"] = [[Border]];
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.UpvalueScanner.Icon
+G2L["a"] = Instance.new("ImageLabel", G2L["8"]);
+G2L["a"]["ZIndex"] = 4;
+G2L["a"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["a"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["ImageColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["a"]["Image"] = [[rbxassetid://4229882828]];
+G2L["a"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a"]["Name"] = [[Icon]];
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Position"] = UDim2.new(0.5, -8, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.UIPadding
+G2L["b"] = Instance.new("UIPadding", G2L["7"]);
+G2L["b"]["PaddingTop"] = UDim.new(0, 5);
+G2L["b"]["PaddingBottom"] = UDim.new(0, 5);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ConstantScanner
+G2L["c"] = Instance.new("ImageButton", G2L["7"]);
+G2L["c"]["ZIndex"] = 3;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["c"]["Image"] = [[rbxassetid://4623529748]];
+G2L["c"]["Size"] = UDim2.new(0, 24, 0, 24);
+G2L["c"]["Name"] = [[ConstantScanner]];
+G2L["c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["c"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ConstantScanner.Border
+G2L["d"] = Instance.new("ImageLabel", G2L["c"]);
+G2L["d"]["ZIndex"] = 2;
+G2L["d"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["d"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["ImageTransparency"] = 0.5;
+G2L["d"]["Image"] = [[rbxassetid://4623529748]];
+G2L["d"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["d"]["Name"] = [[Border]];
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ConstantScanner.Icon
+G2L["e"] = Instance.new("ImageLabel", G2L["c"]);
+G2L["e"]["ZIndex"] = 4;
+G2L["e"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["e"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["ImageColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["e"]["Image"] = [[rbxassetid://4229794828]];
+G2L["e"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["e"]["Name"] = [[Icon]];
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Position"] = UDim2.new(0.5, -8, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ScriptScanner
+G2L["f"] = Instance.new("ImageButton", G2L["7"]);
+G2L["f"]["ZIndex"] = 3;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["f"]["Image"] = [[rbxassetid://4623529748]];
+G2L["f"]["Size"] = UDim2.new(0, 24, 0, 24);
+G2L["f"]["Name"] = [[ScriptScanner]];
+G2L["f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["f"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ScriptScanner.Border
+G2L["10"] = Instance.new("ImageLabel", G2L["f"]);
+G2L["10"]["ZIndex"] = 2;
+G2L["10"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["10"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["ImageTransparency"] = 0.5;
+G2L["10"]["Image"] = [[rbxassetid://4623529748]];
+G2L["10"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["10"]["Name"] = [[Border]];
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ScriptScanner.Icon
+G2L["11"] = Instance.new("ImageLabel", G2L["f"]);
+G2L["11"]["ZIndex"] = 4;
+G2L["11"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["11"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["ImageColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["11"]["Image"] = [[rbxassetid://4229796123]];
+G2L["11"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["11"]["Name"] = [[Icon]];
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["Position"] = UDim2.new(0.5, -8, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ModuleScanner
+G2L["12"] = Instance.new("ImageButton", G2L["7"]);
+G2L["12"]["ZIndex"] = 3;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["12"]["Image"] = [[rbxassetid://4623529748]];
+G2L["12"]["Size"] = UDim2.new(0, 24, 0, 24);
+G2L["12"]["Name"] = [[ModuleScanner]];
+G2L["12"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["12"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ModuleScanner.Border
+G2L["13"] = Instance.new("ImageLabel", G2L["12"]);
+G2L["13"]["ZIndex"] = 2;
+G2L["13"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["13"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["ImageTransparency"] = 0.5;
+G2L["13"]["Image"] = [[rbxassetid://4623529748]];
+G2L["13"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["13"]["Name"] = [[Border]];
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ModuleScanner.Icon
+G2L["14"] = Instance.new("ImageLabel", G2L["12"]);
+G2L["14"]["ZIndex"] = 4;
+G2L["14"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["14"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["ImageColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["14"]["Image"] = [[http://www.roblox.com/asset/?id=4626291022]];
+G2L["14"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["14"]["Name"] = [[Icon]];
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Position"] = UDim2.new(0.5, -8, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.RemoteSpy
+G2L["15"] = Instance.new("ImageButton", G2L["7"]);
+G2L["15"]["ZIndex"] = 3;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["15"]["Image"] = [[rbxassetid://4623529748]];
+G2L["15"]["Size"] = UDim2.new(0, 24, 0, 24);
+G2L["15"]["Name"] = [[RemoteSpy]];
+G2L["15"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["15"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.RemoteSpy.Border
+G2L["16"] = Instance.new("ImageLabel", G2L["15"]);
+G2L["16"]["ZIndex"] = 2;
+G2L["16"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["16"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["ImageTransparency"] = 0.5;
+G2L["16"]["Image"] = [[rbxassetid://4623529748]];
+G2L["16"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["16"]["Name"] = [[Border]];
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.RemoteSpy.Icon
+G2L["17"] = Instance.new("ImageLabel", G2L["15"]);
+G2L["17"]["ZIndex"] = 4;
+G2L["17"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["17"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["ImageColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["17"]["Image"] = [[rbxassetid://4229793132]];
+G2L["17"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["17"]["Name"] = [[Icon]];
+G2L["17"]["BackgroundTransparency"] = 1;
+G2L["17"]["Position"] = UDim2.new(0.5, -8, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ClosureSpy
+G2L["18"] = Instance.new("ImageButton", G2L["7"]);
+G2L["18"]["ZIndex"] = 3;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["18"]["Image"] = [[rbxassetid://4623529748]];
+G2L["18"]["Size"] = UDim2.new(0, 24, 0, 24);
+G2L["18"]["Name"] = [[ClosureSpy]];
+G2L["18"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["18"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ClosureSpy.Border
+G2L["19"] = Instance.new("ImageLabel", G2L["18"]);
+G2L["19"]["ZIndex"] = 2;
+G2L["19"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["19"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["ImageTransparency"] = 0.5;
+G2L["19"]["Image"] = [[rbxassetid://4623529748]];
+G2L["19"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["19"]["Name"] = [[Border]];
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.ClosureSpy.Icon
+G2L["1a"] = Instance.new("ImageLabel", G2L["18"]);
+G2L["1a"]["ZIndex"] = 4;
+G2L["1a"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["1a"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["ImageColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["1a"]["Image"] = [[rbxassetid://4229791997]];
+G2L["1a"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1a"]["Name"] = [[Icon]];
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Position"] = UDim2.new(0.5, -8, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Tabs.Container.UIListLayout
+G2L["1b"] = Instance.new("UIListLayout", G2L["7"]);
+G2L["1b"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["1b"]["Padding"] = UDim.new(0, 7);
+G2L["1b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Drag
+G2L["1c"] = Instance.new("Frame", G2L["2"]);
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1c"]["Position"] = UDim2.new(0, 0, 0, 2);
+G2L["1c"]["Name"] = [[Drag]];
+
+-- Workspace.Hydroxide C.Base.Drag.Title
+G2L["1d"] = Instance.new("TextLabel", G2L["1c"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["TextStrokeTransparency"] = 0.44999998807907104;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["TextTransparency"] = 0.20000000298023224;
+G2L["1d"]["TextSize"] = 18;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1d"]["Text"] = [[Hydroxide c.1]];
+G2L["1d"]["Name"] = [[Title]];
+G2L["1d"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Drag.Collapse
+G2L["1e"] = Instance.new("ImageButton", G2L["1c"]);
+G2L["1e"]["ZIndex"] = 3;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["Image"] = [[rbxassetid://4907153996]];
+G2L["1e"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["1e"]["Name"] = [[Collapse]];
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1e"]["Position"] = UDim2.new(1, -23, 0.5, -8);
+G2L["1e"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Drag.Collapse.Shadow
+G2L["1f"] = Instance.new("ImageLabel", G2L["1e"]);
+G2L["1f"]["ZIndex"] = 2;
+G2L["1f"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["1f"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["ImageTransparency"] = 0.5;
+G2L["1f"]["Image"] = [[rbxassetid://4907153996]];
+G2L["1f"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1f"]["Name"] = [[Shadow]];
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Drag.Icon
+G2L["20"] = Instance.new("ImageLabel", G2L["1c"]);
+G2L["20"]["ZIndex"] = 2;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["ImageColor3"] = Color3.fromRGB(226, 226, 226);
+G2L["20"]["ImageTransparency"] = 0.20000000298023224;
+G2L["20"]["Image"] = [[http://www.roblox.com/asset/?id=5053800667]];
+G2L["20"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["20"]["Name"] = [[Icon]];
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Position"] = UDim2.new(0, 13, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Drag.Icon.Icon
+G2L["21"] = Instance.new("ImageLabel", G2L["20"]);
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["ImageTransparency"] = 0.5;
+G2L["21"]["Image"] = [[http://www.roblox.com/asset/?id=5053800667]];
+G2L["21"]["Size"] = UDim2.new(0, 18, 0, 18);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["21"]["Name"] = [[Icon]];
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Status
+G2L["22"] = Instance.new("TextLabel", G2L["2"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["TextStrokeTransparency"] = 0.44999998807907104;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["TextTransparency"] = 0.20000000298023224;
+G2L["22"]["TextSize"] = 18;
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["Size"] = UDim2.new(1, -10, 0, 18);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["22"]["Text"] = [[• Status: Home Page]];
+G2L["22"]["Name"] = [[Status]];
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["Position"] = UDim2.new(0, 5, 1, -21);
+
+-- Workspace.Hydroxide C.Base.Body
+G2L["23"] = Instance.new("Frame", G2L["2"]);
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["BackgroundTransparency"] = 1;
+G2L["23"]["Size"] = UDim2.new(1, -52, 1, -49);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["23"]["Position"] = UDim2.new(0, 45, 0, 25);
+G2L["23"]["Name"] = [[Body]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages
+G2L["24"] = Instance.new("ImageLabel", G2L["23"]);
+G2L["24"]["ZIndex"] = 2;
+G2L["24"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["24"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["ImageColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["24"]["Image"] = [[rbxassetid://4623529748]];
+G2L["24"]["Size"] = UDim2.new(0.7250000238418579, 0, 1, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["24"]["Name"] = [[Pages]];
+G2L["24"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.Border
+G2L["25"] = Instance.new("ImageLabel", G2L["24"]);
+G2L["25"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["25"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["ImageTransparency"] = 0.42500001192092896;
+G2L["25"]["Image"] = [[rbxassetid://4623529748]];
+G2L["25"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["25"]["Name"] = [[Border]];
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy
+G2L["26"] = Instance.new("Frame", G2L["24"]);
+G2L["26"]["ZIndex"] = 3;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["26"]["Visible"] = false;
+G2L["26"]["Name"] = [[ClosureSpy]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.UIPadding
+G2L["27"] = Instance.new("UIPadding", G2L["26"]);
+G2L["27"]["PaddingTop"] = UDim.new(0, 10);
+G2L["27"]["PaddingRight"] = UDim.new(0, 10);
+G2L["27"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["27"]["PaddingLeft"] = UDim.new(0, 10);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions
+G2L["28"] = Instance.new("Frame", G2L["26"]);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["28"]["Visible"] = false;
+G2L["28"]["Name"] = [[Conditions]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Results
+G2L["29"] = Instance.new("ImageLabel", G2L["28"]);
+G2L["29"]["ZIndex"] = 5;
+G2L["29"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["29"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["ImageColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["29"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["29"]["Size"] = UDim2.new(1, 0, 1, -60);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["29"]["Name"] = [[Results]];
+G2L["29"]["BackgroundTransparency"] = 1;
+G2L["29"]["Position"] = UDim2.new(0, 0, 0, 60);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Results.Border
+G2L["2a"] = Instance.new("ImageLabel", G2L["29"]);
+G2L["2a"]["ZIndex"] = 4;
+G2L["2a"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["2a"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["ImageTransparency"] = 0.5;
+G2L["2a"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["2a"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["2a"]["Name"] = [[Border]];
+G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["2a"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Results.Clip
+G2L["2b"] = Instance.new("Frame", G2L["29"]);
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["BackgroundTransparency"] = 1;
+G2L["2b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2b"]["ClipsDescendants"] = true;
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["2b"]["Name"] = [[Clip]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Results.Clip.Content
+G2L["2c"] = Instance.new("ScrollingFrame", G2L["2b"]);
+G2L["2c"]["ZIndex"] = 6;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["CanvasSize"] = UDim2.new(0, 0, 0, 10);
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["Size"] = UDim2.new(1, 0, 1, 10);
+G2L["2c"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["2c"]["ScrollBarThickness"] = 5;
+G2L["2c"]["Name"] = [[Content]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Results.Clip.Content.UIPadding
+G2L["2d"] = Instance.new("UIPadding", G2L["2c"]);
+G2L["2d"]["PaddingTop"] = UDim.new(0, 5);
+G2L["2d"]["PaddingRight"] = UDim.new(0, 10);
+G2L["2d"]["PaddingBottom"] = UDim.new(0, 5);
+G2L["2d"]["PaddingLeft"] = UDim.new(0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Results.Clip.Content.UIListLayout
+G2L["2e"] = Instance.new("UIListLayout", G2L["2c"]);
+G2L["2e"]["Padding"] = UDim.new(0, 5);
+G2L["2e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Back
+G2L["2f"] = Instance.new("ImageButton", G2L["28"]);
+G2L["2f"]["ZIndex"] = 3;
+G2L["2f"]["ImageTransparency"] = 0.20000000298023224;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["Image"] = [[http://www.roblox.com/asset/?id=4799602537]];
+G2L["2f"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["2f"]["Name"] = [[Back]];
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["2f"]["Position"] = UDim2.new(0, 0, 0, 4);
+G2L["2f"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Buttons
+G2L["30"] = Instance.new("Frame", G2L["28"]);
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["30"]["Position"] = UDim2.new(0, 0, 0, 30);
+G2L["30"]["Name"] = [[Buttons]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Buttons.UIListLayout
+G2L["31"] = Instance.new("UIListLayout", G2L["30"]);
+G2L["31"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["31"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["31"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["31"]["Padding"] = UDim.new(0, 5);
+G2L["31"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Buttons.New
+G2L["32"] = Instance.new("ImageButton", G2L["30"]);
+G2L["32"]["ZIndex"] = 6;
+G2L["32"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["32"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["ImageColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["32"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["32"]["Size"] = UDim2.new(0, 120, 0, 20);
+G2L["32"]["Name"] = [[New]];
+G2L["32"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["32"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Buttons.New.Border
+G2L["33"] = Instance.new("ImageLabel", G2L["32"]);
+G2L["33"]["ZIndex"] = 5;
+G2L["33"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["33"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["ImageTransparency"] = 0.5;
+G2L["33"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["33"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["33"]["Name"] = [[Border]];
+G2L["33"]["BackgroundTransparency"] = 1;
+G2L["33"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Buttons.New.Label
+G2L["34"] = Instance.new("TextLabel", G2L["32"]);
+G2L["34"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["34"]["ZIndex"] = 6;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["TextTransparency"] = 0.20000000298023224;
+G2L["34"]["TextSize"] = 18;
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["34"]["Text"] = [[New Condition]];
+G2L["34"]["Name"] = [[Label]];
+G2L["34"]["BackgroundTransparency"] = 1;
+G2L["34"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.Buttons.New.Icon
+G2L["35"] = Instance.new("ImageLabel", G2L["32"]);
+G2L["35"]["ZIndex"] = 6;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["Image"] = [[http://www.roblox.com/asset/?id=4907980810]];
+G2L["35"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["35"]["Name"] = [[Icon]];
+G2L["35"]["BackgroundTransparency"] = 1;
+G2L["35"]["Position"] = UDim2.new(0, 4, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.ClosureObject
+G2L["36"] = Instance.new("Frame", G2L["28"]);
+G2L["36"]["ZIndex"] = 2;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["BackgroundTransparency"] = 1;
+G2L["36"]["Size"] = UDim2.new(0, 70, 0, 20);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["36"]["Position"] = UDim2.new(1, -70, 0, 4);
+G2L["36"]["Name"] = [[ClosureObject]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.ClosureObject.Icon
+G2L["37"] = Instance.new("ImageLabel", G2L["36"]);
+G2L["37"]["ZIndex"] = 3;
+G2L["37"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["Image"] = [[rbxassetid://4666593447]];
+G2L["37"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["37"]["Name"] = [[Icon]];
+G2L["37"]["BackgroundTransparency"] = 1;
+G2L["37"]["Position"] = UDim2.new(0, 0, 0, 1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Conditions.ClosureObject.Label
+G2L["38"] = Instance.new("TextLabel", G2L["36"]);
+G2L["38"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["38"]["ZIndex"] = 3;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38"]["TextSize"] = 16;
+G2L["38"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["38"]["Size"] = UDim2.new(1, -20, 0, 20);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["38"]["Text"] = [[function]];
+G2L["38"]["Name"] = [[Label]];
+G2L["38"]["BackgroundTransparency"] = 1;
+G2L["38"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List
+G2L["39"] = Instance.new("Frame", G2L["26"]);
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["BackgroundTransparency"] = 1;
+G2L["39"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["39"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["39"]["Name"] = [[List]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Information
+G2L["3a"] = Instance.new("Frame", G2L["39"]);
+G2L["3a"]["ZIndex"] = 5;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["BackgroundTransparency"] = 1;
+G2L["3a"]["Size"] = UDim2.new(1, -20, 0, 20);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["3a"]["Position"] = UDim2.new(0, 10, 0, 25);
+G2L["3a"]["Name"] = [[Information]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Information.Name
+G2L["3b"] = Instance.new("TextLabel", G2L["3a"]);
+G2L["3b"]["TextWrapped"] = true;
+G2L["3b"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["3b"]["ZIndex"] = 4;
+G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3b"]["TextTransparency"] = 0.20000000298023224;
+G2L["3b"]["TextSize"] = 18;
+G2L["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3b"]["Size"] = UDim2.new(0.4350000023841858, 0, 1, 0);
+G2L["3b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["3b"]["Text"] = [[Function Name]];
+G2L["3b"]["Name"] = [[Name]];
+G2L["3b"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Information.UIListLayout
+G2L["3c"] = Instance.new("UIListLayout", G2L["3a"]);
+G2L["3c"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["3c"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["3c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Information.Protos
+G2L["3d"] = Instance.new("TextLabel", G2L["3a"]);
+G2L["3d"]["TextWrapped"] = true;
+G2L["3d"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["3d"]["ZIndex"] = 4;
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3d"]["TextTransparency"] = 0.20000000298023224;
+G2L["3d"]["TextSize"] = 18;
+G2L["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["Size"] = UDim2.new(0.1850000023841858, 0, 1, 0);
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["3d"]["Text"] = [[Protos]];
+G2L["3d"]["Name"] = [[Protos]];
+G2L["3d"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Information.Upvalues
+G2L["3e"] = Instance.new("TextLabel", G2L["3a"]);
+G2L["3e"]["TextWrapped"] = true;
+G2L["3e"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["3e"]["ZIndex"] = 4;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3e"]["TextTransparency"] = 0.20000000298023224;
+G2L["3e"]["TextSize"] = 18;
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["Size"] = UDim2.new(0.1850000023841858, 0, 1, 0);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["3e"]["Text"] = [[Upvalues]];
+G2L["3e"]["Name"] = [[Upvalues]];
+G2L["3e"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Information.Constants
+G2L["3f"] = Instance.new("TextLabel", G2L["3a"]);
+G2L["3f"]["TextWrapped"] = true;
+G2L["3f"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["3f"]["ZIndex"] = 4;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3f"]["TextTransparency"] = 0.20000000298023224;
+G2L["3f"]["TextSize"] = 18;
+G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["Size"] = UDim2.new(0.1850000023841858, 0, 1, 0);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["3f"]["Text"] = [[Constants]];
+G2L["3f"]["Name"] = [[Constants]];
+G2L["3f"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Query
+G2L["40"] = Instance.new("ImageLabel", G2L["39"]);
+G2L["40"]["ZIndex"] = 4;
+G2L["40"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["40"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["40"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["40"]["Image"] = [[rbxassetid://4623529748]];
+G2L["40"]["Size"] = UDim2.new(1, -25, 0, 20);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["40"]["Name"] = [[Query]];
+G2L["40"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Query.Border
+G2L["41"] = Instance.new("ImageLabel", G2L["40"]);
+G2L["41"]["ZIndex"] = 3;
+G2L["41"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["41"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["ImageTransparency"] = 0.42500001192092896;
+G2L["41"]["Image"] = [[rbxassetid://4623529748]];
+G2L["41"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["41"]["Name"] = [[Border]];
+G2L["41"]["BackgroundTransparency"] = 1;
+G2L["41"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Query.Search
+G2L["42"] = Instance.new("TextBox", G2L["40"]);
+G2L["42"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["42"]["PlaceholderColor3"] = Color3.fromRGB(226, 226, 226);
+G2L["42"]["ZIndex"] = 4;
+G2L["42"]["TextSize"] = 18;
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["TextTransparency"] = 0.20000000298023224;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["42"]["BackgroundTransparency"] = 1;
+G2L["42"]["PlaceholderText"] = [[Type to filter out closures...]];
+G2L["42"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["42"]["Text"] = [[]];
+G2L["42"]["Name"] = [[Search]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Query.Refresh
+G2L["43"] = Instance.new("ImageButton", G2L["40"]);
+G2L["43"]["ZIndex"] = 4;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["ImageColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["43"]["Image"] = [[rbxassetid://4623529748]];
+G2L["43"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["43"]["Name"] = [[Refresh]];
+G2L["43"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["43"]["Position"] = UDim2.new(1, 5, 0, 0);
+G2L["43"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Query.Refresh.Border
+G2L["44"] = Instance.new("ImageLabel", G2L["43"]);
+G2L["44"]["ZIndex"] = 2;
+G2L["44"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["44"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["ImageTransparency"] = 0.5;
+G2L["44"]["Image"] = [[rbxassetid://4623529748]];
+G2L["44"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["44"]["Name"] = [[Border]];
+G2L["44"]["BackgroundTransparency"] = 1;
+G2L["44"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Query.Refresh.Icon
+G2L["45"] = Instance.new("ImageLabel", G2L["43"]);
+G2L["45"]["ZIndex"] = 4;
+G2L["45"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["45"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["ImageTransparency"] = 0.20000000298023224;
+G2L["45"]["Image"] = [[http://www.roblox.com/asset/?id=5079465580]];
+G2L["45"]["Size"] = UDim2.new(0, 12, 0, 12);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["45"]["Name"] = [[Icon]];
+G2L["45"]["BackgroundTransparency"] = 1;
+G2L["45"]["Position"] = UDim2.new(0.5, -6, 0.5, -6);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Results
+G2L["46"] = Instance.new("ImageLabel", G2L["39"]);
+G2L["46"]["ZIndex"] = 3;
+G2L["46"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["46"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["ImageColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["46"]["Image"] = [[rbxassetid://4623529748]];
+G2L["46"]["Size"] = UDim2.new(1, 0, 1, -50);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["46"]["Name"] = [[Results]];
+G2L["46"]["BackgroundTransparency"] = 1;
+G2L["46"]["Position"] = UDim2.new(0, 0, 0, 50);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Results.Border
+G2L["47"] = Instance.new("ImageLabel", G2L["46"]);
+G2L["47"]["ZIndex"] = 2;
+G2L["47"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["47"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["ImageTransparency"] = 0.42500001192092896;
+G2L["47"]["Image"] = [[rbxassetid://4623529748]];
+G2L["47"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["47"]["Name"] = [[Border]];
+G2L["47"]["BackgroundTransparency"] = 1;
+G2L["47"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Results.Clip
+G2L["48"] = Instance.new("Frame", G2L["46"]);
+G2L["48"]["ZIndex"] = 3;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["BackgroundTransparency"] = 1;
+G2L["48"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["48"]["ClipsDescendants"] = true;
+G2L["48"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["48"]["Name"] = [[Clip]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Results.Clip.Content
+G2L["49"] = Instance.new("ScrollingFrame", G2L["48"]);
+G2L["49"]["Active"] = true;
+G2L["49"]["ZIndex"] = 3;
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["CanvasSize"] = UDim2.new(0, 0, 0, 10);
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["49"]["BackgroundTransparency"] = 1;
+G2L["49"]["Size"] = UDim2.new(1, 0, 1, 10);
+G2L["49"]["ScrollBarImageColor3"] = Color3.fromRGB(101, 101, 101);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["49"]["ScrollBarThickness"] = 6;
+G2L["49"]["Name"] = [[Content]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Results.Clip.Content.UIListLayout
+G2L["4a"] = Instance.new("UIListLayout", G2L["49"]);
+G2L["4a"]["Padding"] = UDim.new(0, 5);
+G2L["4a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Results.Clip.Content.UIPadding
+G2L["4b"] = Instance.new("UIPadding", G2L["49"]);
+G2L["4b"]["PaddingTop"] = UDim.new(0, 5);
+G2L["4b"]["PaddingRight"] = UDim.new(0, 15);
+G2L["4b"]["PaddingBottom"] = UDim.new(0, 5);
+G2L["4b"]["PaddingLeft"] = UDim.new(0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.List.Results.Clip.ResultStatus
+G2L["4c"] = Instance.new("TextLabel", G2L["48"]);
+G2L["4c"]["TextWrapped"] = true;
+G2L["4c"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["4c"]["ZIndex"] = 3;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4c"]["TextTransparency"] = 0.20000000298023224;
+G2L["4c"]["TextSize"] = 18;
+G2L["4c"]["TextColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["4c"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["4c"]["Text"] = [[No closures found]];
+G2L["4c"]["Name"] = [[ResultStatus]];
+G2L["4c"]["BackgroundTransparency"] = 1;
+G2L["4c"]["Position"] = UDim2.new(0, 0, 0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs
+G2L["4d"] = Instance.new("Frame", G2L["26"]);
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["BackgroundTransparency"] = 1;
+G2L["4d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["4d"]["Visible"] = false;
+G2L["4d"]["Name"] = [[Logs]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Results
+G2L["4e"] = Instance.new("ImageLabel", G2L["4d"]);
+G2L["4e"]["ZIndex"] = 5;
+G2L["4e"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["4e"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["ImageColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["4e"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["4e"]["Size"] = UDim2.new(1, 0, 1, -58);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["4e"]["Name"] = [[Results]];
+G2L["4e"]["BackgroundTransparency"] = 1;
+G2L["4e"]["Position"] = UDim2.new(0, 0, 0, 58);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Results.Border
+G2L["4f"] = Instance.new("ImageLabel", G2L["4e"]);
+G2L["4f"]["ZIndex"] = 4;
+G2L["4f"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["4f"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4f"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["ImageTransparency"] = 0.5;
+G2L["4f"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["4f"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["4f"]["Name"] = [[Border]];
+G2L["4f"]["BackgroundTransparency"] = 1;
+G2L["4f"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Results.Clip
+G2L["50"] = Instance.new("Frame", G2L["4e"]);
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["50"]["BackgroundTransparency"] = 1;
+G2L["50"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["50"]["ClipsDescendants"] = true;
+G2L["50"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["50"]["Name"] = [[Clip]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Results.Clip.Content
+G2L["51"] = Instance.new("ScrollingFrame", G2L["50"]);
+G2L["51"]["ZIndex"] = 6;
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["CanvasSize"] = UDim2.new(0, 0, 0, 10);
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["BackgroundTransparency"] = 1;
+G2L["51"]["Size"] = UDim2.new(1, 0, 1, 10);
+G2L["51"]["ScrollBarImageColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["51"]["ScrollBarThickness"] = 5;
+G2L["51"]["Name"] = [[Content]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Results.Clip.Content.UIPadding
+G2L["52"] = Instance.new("UIPadding", G2L["51"]);
+G2L["52"]["PaddingTop"] = UDim.new(0, 5);
+G2L["52"]["PaddingRight"] = UDim.new(0, 10);
+G2L["52"]["PaddingBottom"] = UDim.new(0, 5);
+G2L["52"]["PaddingLeft"] = UDim.new(0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Results.Clip.Content.UIListLayout
+G2L["53"] = Instance.new("UIListLayout", G2L["51"]);
+G2L["53"]["Padding"] = UDim.new(0, 5);
+G2L["53"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.ClosureObject
+G2L["54"] = Instance.new("Frame", G2L["4d"]);
+G2L["54"]["ZIndex"] = 2;
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["BackgroundTransparency"] = 1;
+G2L["54"]["Size"] = UDim2.new(0, 70, 0, 20);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["54"]["Position"] = UDim2.new(1, -70, 0, 4);
+G2L["54"]["Name"] = [[ClosureObject]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.ClosureObject.Icon
+G2L["55"] = Instance.new("ImageLabel", G2L["54"]);
+G2L["55"]["ZIndex"] = 3;
+G2L["55"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["Image"] = [[rbxassetid://4666593447]];
+G2L["55"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["55"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["55"]["Name"] = [[Icon]];
+G2L["55"]["BackgroundTransparency"] = 1;
+G2L["55"]["Position"] = UDim2.new(0, 0, 0, 1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.ClosureObject.Label
+G2L["56"] = Instance.new("TextLabel", G2L["54"]);
+G2L["56"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["56"]["ZIndex"] = 3;
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["56"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["56"]["TextSize"] = 16;
+G2L["56"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["56"]["Size"] = UDim2.new(1, -20, 0, 20);
+G2L["56"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["56"]["Text"] = [[function]];
+G2L["56"]["Name"] = [[Label]];
+G2L["56"]["BackgroundTransparency"] = 1;
+G2L["56"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Back
+G2L["57"] = Instance.new("ImageButton", G2L["4d"]);
+G2L["57"]["ZIndex"] = 3;
+G2L["57"]["ImageTransparency"] = 0.20000000298023224;
+G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["57"]["Image"] = [[http://www.roblox.com/asset/?id=4799602537]];
+G2L["57"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["57"]["Name"] = [[Back]];
+G2L["57"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["57"]["Position"] = UDim2.new(0, 0, 0, 4);
+G2L["57"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons
+G2L["58"] = Instance.new("Frame", G2L["4d"]);
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["58"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["58"]["Position"] = UDim2.new(0, 0, 0, 30);
+G2L["58"]["Name"] = [[Buttons]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.UIListLayout
+G2L["59"] = Instance.new("UIListLayout", G2L["58"]);
+G2L["59"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["59"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["59"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["59"]["Padding"] = UDim.new(0, 8);
+G2L["59"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Ignore
+G2L["5a"] = Instance.new("ImageButton", G2L["58"]);
+G2L["5a"]["ZIndex"] = 6;
+G2L["5a"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["5a"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["ImageColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["5a"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["5a"]["Size"] = UDim2.new(0, 66, 0, 20);
+G2L["5a"]["Name"] = [[Ignore]];
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5a"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Ignore.Border
+G2L["5b"] = Instance.new("ImageLabel", G2L["5a"]);
+G2L["5b"]["ZIndex"] = 5;
+G2L["5b"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["5b"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5b"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["ImageTransparency"] = 0.5;
+G2L["5b"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["5b"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5b"]["Name"] = [[Border]];
+G2L["5b"]["BackgroundTransparency"] = 1;
+G2L["5b"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Ignore.Label
+G2L["5c"] = Instance.new("TextLabel", G2L["5a"]);
+G2L["5c"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["5c"]["ZIndex"] = 6;
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5c"]["TextTransparency"] = 0.20000000298023224;
+G2L["5c"]["TextSize"] = 18;
+G2L["5c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5c"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["5c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5c"]["Text"] = [[Ignore]];
+G2L["5c"]["Name"] = [[Label]];
+G2L["5c"]["BackgroundTransparency"] = 1;
+G2L["5c"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Ignore.Icon
+G2L["5d"] = Instance.new("ImageLabel", G2L["5a"]);
+G2L["5d"]["ZIndex"] = 6;
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["Image"] = [[rbxassetid://4842578510]];
+G2L["5d"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5d"]["Name"] = [[Icon]];
+G2L["5d"]["BackgroundTransparency"] = 1;
+G2L["5d"]["Position"] = UDim2.new(0, 4, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Block
+G2L["5e"] = Instance.new("ImageButton", G2L["58"]);
+G2L["5e"]["ZIndex"] = 6;
+G2L["5e"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["5e"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["ImageColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["5e"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["5e"]["Size"] = UDim2.new(0, 65, 0, 20);
+G2L["5e"]["Name"] = [[Block]];
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5e"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Block.Border
+G2L["5f"] = Instance.new("ImageLabel", G2L["5e"]);
+G2L["5f"]["ZIndex"] = 5;
+G2L["5f"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["5f"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5f"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5f"]["ImageTransparency"] = 0.5;
+G2L["5f"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["5f"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["5f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5f"]["Name"] = [[Border]];
+G2L["5f"]["BackgroundTransparency"] = 1;
+G2L["5f"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Block.Label
+G2L["60"] = Instance.new("TextLabel", G2L["5e"]);
+G2L["60"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["60"]["ZIndex"] = 6;
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["60"]["TextTransparency"] = 0.20000000298023224;
+G2L["60"]["TextSize"] = 18;
+G2L["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["60"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["60"]["Text"] = [[Block]];
+G2L["60"]["Name"] = [[Label]];
+G2L["60"]["BackgroundTransparency"] = 1;
+G2L["60"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Block.Icon
+G2L["61"] = Instance.new("ImageLabel", G2L["5e"]);
+G2L["61"]["ZIndex"] = 6;
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["Image"] = [[rbxassetid://4891641806]];
+G2L["61"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["61"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["61"]["Name"] = [[Icon]];
+G2L["61"]["BackgroundTransparency"] = 1;
+G2L["61"]["Position"] = UDim2.new(0, 4, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Clear
+G2L["62"] = Instance.new("ImageButton", G2L["58"]);
+G2L["62"]["ZIndex"] = 6;
+G2L["62"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["62"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["ImageColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["62"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["62"]["Size"] = UDim2.new(0, 62, 0, 20);
+G2L["62"]["Name"] = [[Clear]];
+G2L["62"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["62"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Clear.Border
+G2L["63"] = Instance.new("ImageLabel", G2L["62"]);
+G2L["63"]["ZIndex"] = 5;
+G2L["63"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["63"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["63"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["63"]["ImageTransparency"] = 0.5;
+G2L["63"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["63"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["63"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["63"]["Name"] = [[Border]];
+G2L["63"]["BackgroundTransparency"] = 1;
+G2L["63"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Clear.Label
+G2L["64"] = Instance.new("TextLabel", G2L["62"]);
+G2L["64"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["64"]["ZIndex"] = 6;
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["64"]["TextTransparency"] = 0.20000000298023224;
+G2L["64"]["TextSize"] = 18;
+G2L["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["64"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["64"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["64"]["Text"] = [[Clear]];
+G2L["64"]["Name"] = [[Label]];
+G2L["64"]["BackgroundTransparency"] = 1;
+G2L["64"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Clear.Icon
+G2L["65"] = Instance.new("ImageLabel", G2L["62"]);
+G2L["65"]["ZIndex"] = 6;
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["65"]["Image"] = [[rbxassetid://4892169181]];
+G2L["65"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["65"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["65"]["Name"] = [[Icon]];
+G2L["65"]["BackgroundTransparency"] = 1;
+G2L["65"]["Position"] = UDim2.new(0, 4, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Conditions
+G2L["66"] = Instance.new("ImageButton", G2L["58"]);
+G2L["66"]["ZIndex"] = 6;
+G2L["66"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["66"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["ImageColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["66"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["66"]["Size"] = UDim2.new(0, 95, 0, 20);
+G2L["66"]["Name"] = [[Conditions]];
+G2L["66"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["66"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Conditions.Border
+G2L["67"] = Instance.new("ImageLabel", G2L["66"]);
+G2L["67"]["ZIndex"] = 5;
+G2L["67"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["67"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["ImageTransparency"] = 0.5;
+G2L["67"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["67"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["67"]["Name"] = [[Border]];
+G2L["67"]["BackgroundTransparency"] = 1;
+G2L["67"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Conditions.Label
+G2L["68"] = Instance.new("TextLabel", G2L["66"]);
+G2L["68"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["68"]["ZIndex"] = 6;
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["68"]["TextTransparency"] = 0.20000000298023224;
+G2L["68"]["TextSize"] = 18;
+G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["68"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["68"]["Text"] = [[Conditions]];
+G2L["68"]["Name"] = [[Label]];
+G2L["68"]["BackgroundTransparency"] = 1;
+G2L["68"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ClosureSpy.Logs.Buttons.Conditions.Icon
+G2L["69"] = Instance.new("ImageLabel", G2L["66"]);
+G2L["69"]["ZIndex"] = 6;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["69"]["Image"] = [[rbxassetid://4891633802]];
+G2L["69"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["69"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["69"]["Name"] = [[Icon]];
+G2L["69"]["BackgroundTransparency"] = 1;
+G2L["69"]["Position"] = UDim2.new(0, 4, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner
+G2L["6a"] = Instance.new("Frame", G2L["24"]);
+G2L["6a"]["ZIndex"] = 3;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["BackgroundTransparency"] = 1;
+G2L["6a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6a"]["Visible"] = false;
+G2L["6a"]["Name"] = [[ConstantScanner]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Query
+G2L["6b"] = Instance.new("ImageLabel", G2L["6a"]);
+G2L["6b"]["ZIndex"] = 4;
+G2L["6b"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["6b"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6b"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["6b"]["Image"] = [[rbxassetid://4623529748]];
+G2L["6b"]["Size"] = UDim2.new(1, -25, 0, 20);
+G2L["6b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6b"]["Name"] = [[Query]];
+G2L["6b"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Query.Border
+G2L["6c"] = Instance.new("ImageLabel", G2L["6b"]);
+G2L["6c"]["ZIndex"] = 3;
+G2L["6c"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["6c"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6c"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["ImageTransparency"] = 0.42500001192092896;
+G2L["6c"]["Image"] = [[rbxassetid://4623529748]];
+G2L["6c"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6c"]["Name"] = [[Border]];
+G2L["6c"]["BackgroundTransparency"] = 1;
+G2L["6c"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Query.Query
+G2L["6d"] = Instance.new("TextBox", G2L["6b"]);
+G2L["6d"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["6d"]["PlaceholderColor3"] = Color3.fromRGB(226, 226, 226);
+G2L["6d"]["ZIndex"] = 4;
+G2L["6d"]["TextSize"] = 18;
+G2L["6d"]["TextWrapped"] = true;
+G2L["6d"]["TextTransparency"] = 0.20000000298023224;
+G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6d"]["BackgroundTransparency"] = 1;
+G2L["6d"]["PlaceholderText"] = [[Type to filter out constants...]];
+G2L["6d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["6d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6d"]["Text"] = [[]];
+G2L["6d"]["Name"] = [[Query]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Query.Search
+G2L["6e"] = Instance.new("ImageButton", G2L["6b"]);
+G2L["6e"]["ZIndex"] = 4;
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["ImageColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["6e"]["Image"] = [[rbxassetid://4623529748]];
+G2L["6e"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["6e"]["Name"] = [[Search]];
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6e"]["Position"] = UDim2.new(1, 5, 0, 0);
+G2L["6e"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Query.Search.Border
+G2L["6f"] = Instance.new("ImageLabel", G2L["6e"]);
+G2L["6f"]["ZIndex"] = 2;
+G2L["6f"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["6f"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6f"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6f"]["ImageTransparency"] = 0.5;
+G2L["6f"]["Image"] = [[rbxassetid://4623529748]];
+G2L["6f"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["6f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6f"]["Name"] = [[Border]];
+G2L["6f"]["BackgroundTransparency"] = 1;
+G2L["6f"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Query.Search.Icon
+G2L["70"] = Instance.new("ImageLabel", G2L["6e"]);
+G2L["70"]["ZIndex"] = 4;
+G2L["70"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["70"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["Image"] = [[http://www.roblox.com/asset/?id=5082764330]];
+G2L["70"]["Size"] = UDim2.new(0, 14, 0, 15);
+G2L["70"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["70"]["Name"] = [[Icon]];
+G2L["70"]["BackgroundTransparency"] = 1;
+G2L["70"]["Position"] = UDim2.new(0.5, -7, 0.5, -7);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.UIPadding
+G2L["71"] = Instance.new("UIPadding", G2L["6a"]);
+G2L["71"]["PaddingTop"] = UDim.new(0, 10);
+G2L["71"]["PaddingRight"] = UDim.new(0, 10);
+G2L["71"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["71"]["PaddingLeft"] = UDim.new(0, 10);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Results
+G2L["72"] = Instance.new("ImageLabel", G2L["6a"]);
+G2L["72"]["ZIndex"] = 3;
+G2L["72"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["72"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["ImageColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["72"]["Image"] = [[rbxassetid://4623529748]];
+G2L["72"]["Size"] = UDim2.new(1, 0, 1, -25);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["72"]["Name"] = [[Results]];
+G2L["72"]["BackgroundTransparency"] = 1;
+G2L["72"]["Position"] = UDim2.new(0, 0, 0, 25);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Results.Border
+G2L["73"] = Instance.new("ImageLabel", G2L["72"]);
+G2L["73"]["ZIndex"] = 2;
+G2L["73"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["73"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["73"]["ImageTransparency"] = 0.42500001192092896;
+G2L["73"]["Image"] = [[rbxassetid://4623529748]];
+G2L["73"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["73"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["73"]["Name"] = [[Border]];
+G2L["73"]["BackgroundTransparency"] = 1;
+G2L["73"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Results.Clip
+G2L["74"] = Instance.new("Frame", G2L["72"]);
+G2L["74"]["ZIndex"] = 3;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["BackgroundTransparency"] = 1;
+G2L["74"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["74"]["ClipsDescendants"] = true;
+G2L["74"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["74"]["Name"] = [[Clip]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Results.Clip.Content
+G2L["75"] = Instance.new("ScrollingFrame", G2L["74"]);
+G2L["75"]["Active"] = true;
+G2L["75"]["ZIndex"] = 3;
+G2L["75"]["BorderSizePixel"] = 0;
+G2L["75"]["CanvasSize"] = UDim2.new(0, 0, 0, 10);
+G2L["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["75"]["BackgroundTransparency"] = 1;
+G2L["75"]["Size"] = UDim2.new(1, 0, 1, 10);
+G2L["75"]["ScrollBarImageColor3"] = Color3.fromRGB(101, 101, 101);
+G2L["75"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["75"]["ScrollBarThickness"] = 6;
+G2L["75"]["Name"] = [[Content]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Results.Clip.Content.UIListLayout
+G2L["76"] = Instance.new("UIListLayout", G2L["75"]);
+G2L["76"]["Padding"] = UDim.new(0, 5);
+G2L["76"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Results.Clip.Content.UIPadding
+G2L["77"] = Instance.new("UIPadding", G2L["75"]);
+G2L["77"]["PaddingTop"] = UDim.new(0, 5);
+G2L["77"]["PaddingRight"] = UDim.new(0, 15);
+G2L["77"]["PaddingBottom"] = UDim.new(0, 5);
+G2L["77"]["PaddingLeft"] = UDim.new(0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ConstantScanner.Results.Clip.ResultStatus
+G2L["78"] = Instance.new("TextLabel", G2L["74"]);
+G2L["78"]["TextWrapped"] = true;
+G2L["78"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["78"]["ZIndex"] = 3;
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["78"]["TextTransparency"] = 0.20000000298023224;
+G2L["78"]["TextSize"] = 18;
+G2L["78"]["TextColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["78"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["78"]["Text"] = [[No constants found]];
+G2L["78"]["Name"] = [[ResultStatus]];
+G2L["78"]["BackgroundTransparency"] = 1;
+G2L["78"]["Position"] = UDim2.new(0, 0, 0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.Home
+G2L["79"] = Instance.new("Frame", G2L["24"]);
+G2L["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["79"]["BackgroundTransparency"] = 1;
+G2L["79"]["Size"] = UDim2.new(1, 0, 0.800000011920929, 0);
+G2L["79"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["79"]["Name"] = [[Home]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.Home.Title
+G2L["7a"] = Instance.new("TextLabel", G2L["79"]);
+G2L["7a"]["TextWrapped"] = true;
+G2L["7a"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["7a"]["ZIndex"] = 2;
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7a"]["TextTransparency"] = 0.20000000298023224;
+G2L["7a"]["TextSize"] = 20;
+G2L["7a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["Size"] = UDim2.new(1, 0, 0, 25);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["7a"]["Text"] = [[Welcome to Hydroxide]];
+G2L["7a"]["Name"] = [[Title]];
+G2L["7a"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.Home.UIListLayout
+G2L["7b"] = Instance.new("UIListLayout", G2L["79"]);
+G2L["7b"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["7b"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["7b"]["Padding"] = UDim.new(0.05000000074505806, 0);
+G2L["7b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.Home.Logo
+G2L["7c"] = Instance.new("ImageLabel", G2L["79"]);
+G2L["7c"]["ZIndex"] = 3;
+G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7c"]["ImageColor3"] = Color3.fromRGB(171, 171, 171);
+G2L["7c"]["Image"] = [[rbxassetid://5053765125]];
+G2L["7c"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["7c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["7c"]["Name"] = [[Logo]];
+G2L["7c"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.Home.Logo.Shade
+G2L["7d"] = Instance.new("ImageLabel", G2L["7c"]);
+G2L["7d"]["ZIndex"] = 2;
+G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7d"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7d"]["ImageTransparency"] = 0.5;
+G2L["7d"]["Image"] = [[rbxassetid://5053765125]];
+G2L["7d"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["7d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["7d"]["Name"] = [[Shade]];
+G2L["7d"]["BackgroundTransparency"] = 1;
+G2L["7d"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.Home.Slogan
+G2L["7e"] = Instance.new("TextLabel", G2L["79"]);
+G2L["7e"]["TextWrapped"] = true;
+G2L["7e"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["7e"]["ZIndex"] = 2;
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["7e"]["TextTransparency"] = 0.20000000298023224;
+G2L["7e"]["TextSize"] = 20;
+G2L["7e"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["7e"]["Size"] = UDim2.new(1, 0, 0, 25);
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["7e"]["Text"] = [[forever better than racist dolphin's console]];
+G2L["7e"]["Name"] = [[Slogan]];
+G2L["7e"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner
+G2L["7f"] = Instance.new("Frame", G2L["24"]);
+G2L["7f"]["ZIndex"] = 3;
+G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7f"]["BackgroundTransparency"] = 1;
+G2L["7f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["7f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["7f"]["Visible"] = false;
+G2L["7f"]["Name"] = [[ModuleScanner]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Query
+G2L["80"] = Instance.new("ImageLabel", G2L["7f"]);
+G2L["80"]["ZIndex"] = 4;
+G2L["80"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["80"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["ImageColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["80"]["Image"] = [[rbxassetid://4623529748]];
+G2L["80"]["Size"] = UDim2.new(1, -25, 0, 20);
+G2L["80"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["80"]["Name"] = [[Query]];
+G2L["80"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Query.Border
+G2L["81"] = Instance.new("ImageLabel", G2L["80"]);
+G2L["81"]["ZIndex"] = 3;
+G2L["81"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["81"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["81"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["81"]["ImageTransparency"] = 0.42500001192092896;
+G2L["81"]["Image"] = [[rbxassetid://4623529748]];
+G2L["81"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["81"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["81"]["Name"] = [[Border]];
+G2L["81"]["BackgroundTransparency"] = 1;
+G2L["81"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Query.Search
+G2L["82"] = Instance.new("TextBox", G2L["80"]);
+G2L["82"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["82"]["PlaceholderColor3"] = Color3.fromRGB(226, 226, 226);
+G2L["82"]["ZIndex"] = 4;
+G2L["82"]["TextSize"] = 18;
+G2L["82"]["TextWrapped"] = true;
+G2L["82"]["TextTransparency"] = 0.20000000298023224;
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["82"]["BackgroundTransparency"] = 1;
+G2L["82"]["PlaceholderText"] = [[Type to filter out modules...]];
+G2L["82"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["82"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["82"]["Text"] = [[]];
+G2L["82"]["Name"] = [[Search]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Query.Refresh
+G2L["83"] = Instance.new("ImageButton", G2L["80"]);
+G2L["83"]["ZIndex"] = 4;
+G2L["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["83"]["ImageColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["83"]["Image"] = [[rbxassetid://4623529748]];
+G2L["83"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["83"]["Name"] = [[Refresh]];
+G2L["83"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["83"]["Position"] = UDim2.new(1, 5, 0, 0);
+G2L["83"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Query.Refresh.Border
+G2L["84"] = Instance.new("ImageLabel", G2L["83"]);
+G2L["84"]["ZIndex"] = 2;
+G2L["84"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["84"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["84"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["ImageTransparency"] = 0.5;
+G2L["84"]["Image"] = [[rbxassetid://4623529748]];
+G2L["84"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["84"]["Name"] = [[Border]];
+G2L["84"]["BackgroundTransparency"] = 1;
+G2L["84"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Query.Refresh.Icon
+G2L["85"] = Instance.new("ImageLabel", G2L["83"]);
+G2L["85"]["ZIndex"] = 4;
+G2L["85"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["85"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["ImageTransparency"] = 0.20000000298023224;
+G2L["85"]["Image"] = [[http://www.roblox.com/asset/?id=5079465580]];
+G2L["85"]["Size"] = UDim2.new(0, 12, 0, 12);
+G2L["85"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["85"]["Name"] = [[Icon]];
+G2L["85"]["BackgroundTransparency"] = 1;
+G2L["85"]["Position"] = UDim2.new(0.5, -6, 0.5, -6);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.UIPadding
+G2L["86"] = Instance.new("UIPadding", G2L["7f"]);
+G2L["86"]["PaddingTop"] = UDim.new(0, 10);
+G2L["86"]["PaddingRight"] = UDim.new(0, 10);
+G2L["86"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["86"]["PaddingLeft"] = UDim.new(0, 10);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Results
+G2L["87"] = Instance.new("ImageLabel", G2L["7f"]);
+G2L["87"]["ZIndex"] = 3;
+G2L["87"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["87"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["ImageColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["87"]["Image"] = [[rbxassetid://4623529748]];
+G2L["87"]["Size"] = UDim2.new(1, 0, 1, -50);
+G2L["87"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["87"]["Name"] = [[Results]];
+G2L["87"]["BackgroundTransparency"] = 1;
+G2L["87"]["Position"] = UDim2.new(0, 0, 0, 50);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Results.Border
+G2L["88"] = Instance.new("ImageLabel", G2L["87"]);
+G2L["88"]["ZIndex"] = 2;
+G2L["88"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["88"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["ImageTransparency"] = 0.42500001192092896;
+G2L["88"]["Image"] = [[rbxassetid://4623529748]];
+G2L["88"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["88"]["Name"] = [[Border]];
+G2L["88"]["BackgroundTransparency"] = 1;
+G2L["88"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Results.Clip
+G2L["89"] = Instance.new("Frame", G2L["87"]);
+G2L["89"]["ZIndex"] = 3;
+G2L["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["89"]["BackgroundTransparency"] = 1;
+G2L["89"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["89"]["ClipsDescendants"] = true;
+G2L["89"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["89"]["Name"] = [[Clip]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Results.Clip.Content
+G2L["8a"] = Instance.new("ScrollingFrame", G2L["89"]);
+G2L["8a"]["Active"] = true;
+G2L["8a"]["ZIndex"] = 3;
+G2L["8a"]["BorderSizePixel"] = 0;
+G2L["8a"]["CanvasSize"] = UDim2.new(0, 0, 0, 10);
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["BackgroundTransparency"] = 1;
+G2L["8a"]["Size"] = UDim2.new(1, 0, 1, 10);
+G2L["8a"]["ScrollBarImageColor3"] = Color3.fromRGB(101, 101, 101);
+G2L["8a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["8a"]["ScrollBarThickness"] = 6;
+G2L["8a"]["Name"] = [[Content]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Results.Clip.Content.UIListLayout
+G2L["8b"] = Instance.new("UIListLayout", G2L["8a"]);
+G2L["8b"]["Padding"] = UDim.new(0, 5);
+G2L["8b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Results.Clip.Content.UIPadding
+G2L["8c"] = Instance.new("UIPadding", G2L["8a"]);
+G2L["8c"]["PaddingTop"] = UDim.new(0, 5);
+G2L["8c"]["PaddingRight"] = UDim.new(0, 15);
+G2L["8c"]["PaddingBottom"] = UDim.new(0, 5);
+G2L["8c"]["PaddingLeft"] = UDim.new(0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Results.Clip.ResultStatus
+G2L["8d"] = Instance.new("TextLabel", G2L["89"]);
+G2L["8d"]["TextWrapped"] = true;
+G2L["8d"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["8d"]["ZIndex"] = 3;
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8d"]["TextTransparency"] = 0.20000000298023224;
+G2L["8d"]["TextSize"] = 18;
+G2L["8d"]["TextColor3"] = Color3.fromRGB(128, 128, 128);
+G2L["8d"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["8d"]["Text"] = [[No modules found]];
+G2L["8d"]["Name"] = [[ResultStatus]];
+G2L["8d"]["BackgroundTransparency"] = 1;
+G2L["8d"]["Position"] = UDim2.new(0, 0, 0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Information
+G2L["8e"] = Instance.new("Frame", G2L["7f"]);
+G2L["8e"]["ZIndex"] = 5;
+G2L["8e"]["BorderSizePixel"] = 0;
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["BackgroundTransparency"] = 1;
+G2L["8e"]["Size"] = UDim2.new(1, -35, 0, 20);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["8e"]["Position"] = UDim2.new(0, 15, 0, 25);
+G2L["8e"]["Name"] = [[Information]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Information.Name
+G2L["8f"] = Instance.new("TextLabel", G2L["8e"]);
+G2L["8f"]["TextWrapped"] = true;
+G2L["8f"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["8f"]["ZIndex"] = 4;
+G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8f"]["TextTransparency"] = 0.20000000298023224;
+G2L["8f"]["TextSize"] = 18;
+G2L["8f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8f"]["Size"] = UDim2.new(0.5, 0, 1, 0);
+G2L["8f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["8f"]["Text"] = [[Name]];
+G2L["8f"]["Name"] = [[Name]];
+G2L["8f"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Information.UIListLayout
+G2L["90"] = Instance.new("UIListLayout", G2L["8e"]);
+G2L["90"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["90"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["90"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Information.Protos
+G2L["91"] = Instance.new("TextLabel", G2L["8e"]);
+G2L["91"]["TextWrapped"] = true;
+G2L["91"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["91"]["ZIndex"] = 4;
+G2L["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["91"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["91"]["TextTransparency"] = 0.20000000298023224;
+G2L["91"]["TextSize"] = 18;
+G2L["91"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["Size"] = UDim2.new(0.25, 0, 1, 0);
+G2L["91"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["91"]["Text"] = [[Protos]];
+G2L["91"]["Name"] = [[Protos]];
+G2L["91"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.ModuleScanner.Information.Constants
+G2L["92"] = Instance.new("TextLabel", G2L["8e"]);
+G2L["92"]["TextWrapped"] = true;
+G2L["92"]["TextStrokeTransparency"] = 0.42500001192092896;
+G2L["92"]["ZIndex"] = 4;
+G2L["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["92"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["92"]["TextTransparency"] = 0.20000000298023224;
+G2L["92"]["TextSize"] = 18;
+G2L["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["92"]["Size"] = UDim2.new(0.25, 0, 1, 0);
+G2L["92"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["92"]["Text"] = [[Constants]];
+G2L["92"]["Name"] = [[Constants]];
+G2L["92"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy
+G2L["93"] = Instance.new("Frame", G2L["24"]);
+G2L["93"]["ZIndex"] = 3;
+G2L["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["93"]["BackgroundTransparency"] = 1;
+G2L["93"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["93"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["93"]["Visible"] = false;
+G2L["93"]["Name"] = [[RemoteSpy]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.UIPadding
+G2L["94"] = Instance.new("UIPadding", G2L["93"]);
+G2L["94"]["PaddingTop"] = UDim.new(0, 10);
+G2L["94"]["PaddingRight"] = UDim.new(0, 10);
+G2L["94"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["94"]["PaddingLeft"] = UDim.new(0, 10);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs
+G2L["95"] = Instance.new("Frame", G2L["93"]);
+G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["95"]["BackgroundTransparency"] = 1;
+G2L["95"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["95"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["95"]["Visible"] = false;
+G2L["95"]["Name"] = [[Logs]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Results
+G2L["96"] = Instance.new("ImageLabel", G2L["95"]);
+G2L["96"]["ZIndex"] = 5;
+G2L["96"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["96"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["ImageColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["96"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["96"]["Size"] = UDim2.new(1, 0, 1, -58);
+G2L["96"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["96"]["Name"] = [[Results]];
+G2L["96"]["BackgroundTransparency"] = 1;
+G2L["96"]["Position"] = UDim2.new(0, 0, 0, 58);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Results.Border
+G2L["97"] = Instance.new("ImageLabel", G2L["96"]);
+G2L["97"]["ZIndex"] = 4;
+G2L["97"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["97"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["ImageTransparency"] = 0.5;
+G2L["97"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["97"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["97"]["Name"] = [[Border]];
+G2L["97"]["BackgroundTransparency"] = 1;
+G2L["97"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Results.Clip
+G2L["98"] = Instance.new("Frame", G2L["96"]);
+G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["BackgroundTransparency"] = 1;
+G2L["98"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["98"]["ClipsDescendants"] = true;
+G2L["98"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["98"]["Name"] = [[Clip]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Results.Clip.Content
+G2L["99"] = Instance.new("ScrollingFrame", G2L["98"]);
+G2L["99"]["ZIndex"] = 6;
+G2L["99"]["BorderSizePixel"] = 0;
+G2L["99"]["CanvasSize"] = UDim2.new(0, 0, 0, 10);
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["BackgroundTransparency"] = 1;
+G2L["99"]["Size"] = UDim2.new(1, 0, 1, 10);
+G2L["99"]["ScrollBarImageColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["99"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["99"]["ScrollBarThickness"] = 5;
+G2L["99"]["Name"] = [[Content]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Results.Clip.Content.UIPadding
+G2L["9a"] = Instance.new("UIPadding", G2L["99"]);
+G2L["9a"]["PaddingTop"] = UDim.new(0, 5);
+G2L["9a"]["PaddingRight"] = UDim.new(0, 10);
+G2L["9a"]["PaddingBottom"] = UDim.new(0, 5);
+G2L["9a"]["PaddingLeft"] = UDim.new(0, 5);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Results.Clip.Content.UIListLayout
+G2L["9b"] = Instance.new("UIListLayout", G2L["99"]);
+G2L["9b"]["Padding"] = UDim.new(0, 5);
+G2L["9b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.RemoteObject
+G2L["9c"] = Instance.new("Frame", G2L["95"]);
+G2L["9c"]["ZIndex"] = 2;
+G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["BackgroundTransparency"] = 1;
+G2L["9c"]["Size"] = UDim2.new(0, 99, 0, 20);
+G2L["9c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["9c"]["Position"] = UDim2.new(1, -99, 0, 4);
+G2L["9c"]["Name"] = [[RemoteObject]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.RemoteObject.Icon
+G2L["9d"] = Instance.new("ImageLabel", G2L["9c"]);
+G2L["9d"]["ZIndex"] = 3;
+G2L["9d"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9d"]["Image"] = [[rbxassetid://4229806545]];
+G2L["9d"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["9d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["9d"]["Name"] = [[Icon]];
+G2L["9d"]["BackgroundTransparency"] = 1;
+G2L["9d"]["Position"] = UDim2.new(0, 0, 0, 1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.RemoteObject.Label
+G2L["9e"] = Instance.new("TextLabel", G2L["9c"]);
+G2L["9e"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["9e"]["ZIndex"] = 3;
+G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["9e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9e"]["TextSize"] = 16;
+G2L["9e"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["9e"]["Size"] = UDim2.new(1, -20, 0, 20);
+G2L["9e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["9e"]["Text"] = [[RemoteEvent]];
+G2L["9e"]["Name"] = [[Label]];
+G2L["9e"]["BackgroundTransparency"] = 1;
+G2L["9e"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Back
+G2L["9f"] = Instance.new("ImageButton", G2L["95"]);
+G2L["9f"]["ZIndex"] = 3;
+G2L["9f"]["ImageTransparency"] = 0.20000000298023224;
+G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9f"]["Image"] = [[http://www.roblox.com/asset/?id=4799602537]];
+G2L["9f"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["9f"]["Name"] = [[Back]];
+G2L["9f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["9f"]["Position"] = UDim2.new(0, 0, 0, 4);
+G2L["9f"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons
+G2L["a0"] = Instance.new("Frame", G2L["95"]);
+G2L["a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a0"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["a0"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a0"]["Position"] = UDim2.new(0, 0, 0, 30);
+G2L["a0"]["Name"] = [[Buttons]];
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.UIListLayout
+G2L["a1"] = Instance.new("UIListLayout", G2L["a0"]);
+G2L["a1"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["a1"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["a1"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["a1"]["Padding"] = UDim.new(0, 8);
+G2L["a1"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Ignore
+G2L["a2"] = Instance.new("ImageButton", G2L["a0"]);
+G2L["a2"]["ZIndex"] = 6;
+G2L["a2"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["a2"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a2"]["ImageColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["a2"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["a2"]["Size"] = UDim2.new(0, 66, 0, 20);
+G2L["a2"]["Name"] = [[Ignore]];
+G2L["a2"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a2"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Ignore.Border
+G2L["a3"] = Instance.new("ImageLabel", G2L["a2"]);
+G2L["a3"]["ZIndex"] = 5;
+G2L["a3"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["a3"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a3"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a3"]["ImageTransparency"] = 0.5;
+G2L["a3"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["a3"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["a3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a3"]["Name"] = [[Border]];
+G2L["a3"]["BackgroundTransparency"] = 1;
+G2L["a3"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Ignore.Label
+G2L["a4"] = Instance.new("TextLabel", G2L["a2"]);
+G2L["a4"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["a4"]["ZIndex"] = 6;
+G2L["a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a4"]["TextTransparency"] = 0.20000000298023224;
+G2L["a4"]["TextSize"] = 18;
+G2L["a4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a4"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["a4"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a4"]["Text"] = [[Ignore]];
+G2L["a4"]["Name"] = [[Label]];
+G2L["a4"]["BackgroundTransparency"] = 1;
+G2L["a4"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Ignore.Icon
+G2L["a5"] = Instance.new("ImageLabel", G2L["a2"]);
+G2L["a5"]["ZIndex"] = 6;
+G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a5"]["Image"] = [[rbxassetid://4842578510]];
+G2L["a5"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["a5"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a5"]["Name"] = [[Icon]];
+G2L["a5"]["BackgroundTransparency"] = 1;
+G2L["a5"]["Position"] = UDim2.new(0, 4, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Block
+G2L["a6"] = Instance.new("ImageButton", G2L["a0"]);
+G2L["a6"]["ZIndex"] = 6;
+G2L["a6"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["a6"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a6"]["ImageColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["a6"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["a6"]["Size"] = UDim2.new(0, 65, 0, 20);
+G2L["a6"]["Name"] = [[Block]];
+G2L["a6"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a6"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Block.Border
+G2L["a7"] = Instance.new("ImageLabel", G2L["a6"]);
+G2L["a7"]["ZIndex"] = 5;
+G2L["a7"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["a7"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a7"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a7"]["ImageTransparency"] = 0.5;
+G2L["a7"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["a7"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["a7"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a7"]["Name"] = [[Border]];
+G2L["a7"]["BackgroundTransparency"] = 1;
+G2L["a7"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Block.Label
+G2L["a8"] = Instance.new("TextLabel", G2L["a6"]);
+G2L["a8"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["a8"]["ZIndex"] = 6;
+G2L["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a8"]["TextTransparency"] = 0.20000000298023224;
+G2L["a8"]["TextSize"] = 18;
+G2L["a8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a8"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["a8"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a8"]["Text"] = [[Block]];
+G2L["a8"]["Name"] = [[Label]];
+G2L["a8"]["BackgroundTransparency"] = 1;
+G2L["a8"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Block.Icon
+G2L["a9"] = Instance.new("ImageLabel", G2L["a6"]);
+G2L["a9"]["ZIndex"] = 6;
+G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a9"]["Image"] = [[rbxassetid://4891641806]];
+G2L["a9"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["a9"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a9"]["Name"] = [[Icon]];
+G2L["a9"]["BackgroundTransparency"] = 1;
+G2L["a9"]["Position"] = UDim2.new(0, 4, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Clear
+G2L["aa"] = Instance.new("ImageButton", G2L["a0"]);
+G2L["aa"]["ZIndex"] = 6;
+G2L["aa"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["aa"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["aa"]["ImageColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["aa"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["aa"]["Size"] = UDim2.new(0, 62, 0, 20);
+G2L["aa"]["Name"] = [[Clear]];
+G2L["aa"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["aa"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Clear.Border
+G2L["ab"] = Instance.new("ImageLabel", G2L["aa"]);
+G2L["ab"]["ZIndex"] = 5;
+G2L["ab"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["ab"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ab"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ab"]["ImageTransparency"] = 0.5;
+G2L["ab"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["ab"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["ab"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["ab"]["Name"] = [[Border]];
+G2L["ab"]["BackgroundTransparency"] = 1;
+G2L["ab"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Clear.Label
+G2L["ac"] = Instance.new("TextLabel", G2L["aa"]);
+G2L["ac"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["ac"]["ZIndex"] = 6;
+G2L["ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ac"]["TextTransparency"] = 0.20000000298023224;
+G2L["ac"]["TextSize"] = 18;
+G2L["ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ac"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["ac"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["ac"]["Text"] = [[Clear]];
+G2L["ac"]["Name"] = [[Label]];
+G2L["ac"]["BackgroundTransparency"] = 1;
+G2L["ac"]["Position"] = UDim2.new(0, 20, 0, 0);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Clear.Icon
+G2L["ad"] = Instance.new("ImageLabel", G2L["aa"]);
+G2L["ad"]["ZIndex"] = 6;
+G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ad"]["Image"] = [[rbxassetid://4892169181]];
+G2L["ad"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["ad"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["ad"]["Name"] = [[Icon]];
+G2L["ad"]["BackgroundTransparency"] = 1;
+G2L["ad"]["Position"] = UDim2.new(0, 4, 0.5, -8);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Conditions
+G2L["ae"] = Instance.new("ImageButton", G2L["a0"]);
+G2L["ae"]["ZIndex"] = 6;
+G2L["ae"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["ae"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ae"]["ImageColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["ae"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["ae"]["Size"] = UDim2.new(0, 95, 0, 20);
+G2L["ae"]["Name"] = [[Conditions]];
+G2L["ae"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["ae"]["BackgroundTransparency"] = 1;
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Conditions.Border
+G2L["af"] = Instance.new("ImageLabel", G2L["ae"]);
+G2L["af"]["ZIndex"] = 5;
+G2L["af"]["SliceCenter"] = Rect.new(25, 25, 25, 25);
+G2L["af"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["af"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["af"]["ImageTransparency"] = 0.5;
+G2L["af"]["Image"] = [[http://www.roblox.com/asset/?id=4503146326]];
+G2L["af"]["Size"] = UDim2.new(1, 2, 1, 2);
+G2L["af"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["af"]["Name"] = [[Border]];
+G2L["af"]["BackgroundTransparency"] = 1;
+G2L["af"]["Position"] = UDim2.new(0, -1, 0, -1);
+
+-- Workspace.Hydroxide C.Base.Body.Pages.RemoteSpy.Logs.Buttons.Conditions.Label
+G2L["b0"] = Instance.new("TextLabel", G2L["ae"]);
+G2L["b0"]["TextStrokeTransparency"] = 0.6499999761581421;
+G2L["b0"]["ZIndex"] = 6;
+G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b0"]["TextTransparency"] = 0.20000000298023224;
+G2L["b0"]["TextSize"] = 18;
+G2L["b0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["b0"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["b0"]["Text"] = [[Conditions]];
+G2L["b0"]["Name"] = [[Label]];
+G2L["b0"]["BackgroundTransparency"] = 1

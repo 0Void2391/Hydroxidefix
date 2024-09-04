@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- Workspace.Hydroxide C
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", gethui());
 G2L["1"]["Name"] = [[Hydroxide C]];
 
 -- Workspace.Hydroxide C.Base

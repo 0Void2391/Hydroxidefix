@@ -2,7 +2,7 @@ local CoreGui = game:GetService("CoreGui")
 local UserInput = game:GetService("UserInputService")
 local HttpService = game:GetService("HttpService")
 
-local Interface = import("ui/HydroxideC")
+local Interface = import("ui/ui")
 
 if oh.Cache["ui/main"] then
 	return Interface
